@@ -1,0 +1,38 @@
+/* print this pattern
+
+*
+**
+* *
+*  *
+*   *
+******
+
+for n=6;
+
+*/
+
+#include <bits/stdc++.h> 
+
+using namespace std; 
+/* For a given array arr[], returns the maximum j – i such that 
+	arr[j] > arr[i] */
+
+
+int main()
+{
+    int n,i,j;
+    
+    cin>>n;
+    
+    for(i=0;i<=n;i++)
+    {
+        for(j=0;j<i;j++)
+        {
+            if(j==0||j==(i-1)||i==n)
+            cout<<"*";
+            else
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}
